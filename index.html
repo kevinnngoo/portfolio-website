@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kevin Ngo's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #2b2b2b;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    header button {
+      background-color: white;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1em;
+      cursor: pointer;
+      margin: 0 10px;
+    }
+
+    header button:hover {
+      background-color: #f0f0f0;
+    }
+
+    h1, h2, h3 {
+      color: white;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    h2 {
+      font-size: 2em;
+      margin-top: 40px;
+    }
+
+    h3 {
+      font-size: 1.75em;
+      margin-top: 40px;
+    }
+
+    p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 20px auto;
+      line-height: 1.8;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 200px; /* Fixed width */
+      height: 200px; /* Fixed height */
+      object-fit: cover; /* Ensures the image fits within the specified dimensions without distortion */
+      border-radius: 8px;
+    }
+
+    .box {
+      background-color: #353935;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-buttons {
+      margin-top: 50px;
+    }
+
+    .contact-buttons button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2em;
+      margin: 10px;
+      background-color: gray;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .contact-buttons button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Updated styles for the email section */
+    .email-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 50px 0;
+      text-align: center;
+    }
+
+    .email-section p {
+      font-size: 1.5em;
+      color: #ffffff;
+      margin: 10px;
+    }
+
+    .email-section a {
+      color: #ffa500; /* Bright orange color for the email link */
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .email-section a:hover {
+      color: #ffcc00; /* Slightly lighter shade on hover */
+    }
+
+    /* Styles for project links */
+    .project-link {
+      color: #ffa500; /* Bright orange for visibility */
+      text-decoration: none;
+    }
+
+    .project-link:hover {
+      color: #ffcc00; /* Slightly lighter orange on hover */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button onclick="document.getElementById('about').scrollIntoView()">About</button>
+    <button onclick="document.getElementById('education').scrollIntoView()">Education</button>
+    <button onclick="document.getElementById('experience').scrollIntoView()">Experience</button>
+    <button onclick="document.getElementById('projects').scrollIntoView()">Projects</button>
+    <button onclick="document.getElementById('skills').scrollIntoView()">Skills</button>
+    <button onclick="document.getElementById('contact').scrollIntoView()">Contact</button>
+  </header>
+
+  <h1 id="about">ABOUT ME</h1>
+  <div class="box">
+    <img src="https://media.licdn.com/dms/image/D4E03AQFYtSJEIUcJ-A/profile-displayphoto-shrink_400_400/0/1718258123886?e=1727308800&v=beta&t=-nf0H3geE2ulyJs8cey28BAUbYJ-saG1ICfsZgRB0-s" alt="Kevin Ngo" class="profile-img">
+    <p>My name is Kevin Ngo, and I am a passionate and dedicated Computer Science graduate from Springfield College. I am eager to pursue a career in Software Engineering, with a strong interest in Full Stack Development.</p>
+  </div>
+
+  <h2 id="education">EDUCATION</h2>
+  <div class="box">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP15oFyWxmjPuQWM6oBJpXS6HqtqKqeIydeQ&s" alt="Springfield College" class="education-img">
+    <p><strong>Springfield College</strong><br>Bachelor of Science in Computer and Information Sciences, Minor in Business Management<br>Sep. 2021 - May 2024<br>3.78 / 4.00 GPA, Magna Cum Laude</p>
+  </div>
+
+  <h3 id="experience">EXPERIENCE</h3>
+  <div class="box">
+    <img src="https://s3-media0.fl.yelpcdn.com/bphoto/G1nZ6evXaWRO6uTpZZEEeQ/348s.jpg" alt="Caring Pharmacy" class="experience-img">
+    <p><strong>Caring Pharmacy</strong><br><i>Pharmacy Technician Trainee</i><br>Oct. 2023 - Current</p>
+    <p>Collaborated directly with pharmacists to ensure precise and prompt dispensing of medications, showcasing attention to detail and commitment to safety procedures. Utilized communication skills to engage with clients, address inquiries, and provide assistance in a professional and friendly manner. Maintained the organization of inventory to ensure the timely restocking of medications and contributed to a smooth workflow.</p>
+  </div>
+
+  <div class="box">
+    <img src="https://cdn.worldvectorlogo.com/logos/cvs-pharmacy-1.svg" alt="CVS Pharmacy" class="experience-img">
+    <p><strong>CVS</strong><br><i>Retail Store Associate</i><br>Mar. 2022 - Dec. 2022</p>
+    <p>Operated a POS system cash register while maintaining a well-organized and visually appealing sales floor. Collaborated with team members to implement store promotions and maintain optimal inventory levels. Advertised and promoted store membership program while delivering exceptional customer service, leading to a significant increase in customer sign-ups.</p>
+  </div>
+
+  <h3 id="projects">PROJECTS</h3>
+  <div class="box">
+    <p><strong>Real-time Currency Converter</strong><br>C++<br>Developed a real-time currency converter that fetches the latest exchange rates from an online API to provide accurate currency conversion. Designed a user-friendly console interface allowing seamless input of currencies and amounts, delivering immediate conversion results to enhance user experience.<br><a class="project-link" href="https://github.com/kevinnngoo/currency-converter.git" target="_blank">GitHub Repository</a></p>
+
+    <p><strong>Snake</strong><br>Python<br>Developed a Snake game utilizing Python and integrated advanced object-oriented programming for optimal functionality. Engineered dynamic score monitoring and adaptive game pace modulation to enhance user interaction and refine gameplay.<br><a class="project-link" href="https://github.com/kevinnngoo/Python-Snake-Game.git" target="_blank">GitHub Repository</a></p>
+
+    <p><strong>United States Guessing Game</strong><br>Python<br>Developed an interactive U.S. states guessing game using Python and Turtle graphics, enhancing user engagement with real-time feedback and visual state placement.<br><a class="project-link" href="https://github.com/kevinnngoo/python-us-states-game.git" target="_blank">GitHub Repository</a></p>
+  </div>
+
+  <h3 id="skills">SKILLS</h3>
+  <div class="box">
+    <p><strong>Languages:</strong> Python, JavaScript, C++, Java, SQL, Unix/Linux, Visual Basic, HTML, CSS, React.js</p>
+    <p><strong>Tools:</strong> Git</p>
+    <p><strong>Operating Systems:</strong> Windows, macOS</p>
+    <p><strong>Relevant Coursework:</strong> Data Structures using C++, Python Programming, Database Development and Management, Fundamentals of Operating Systems, Object-Oriented Programming with Java, Computer Systems Seminar</p>
+  </div>
+
+  <!-- Updated Email Section -->
+  <div class="email-section">
+    <p>Feel free to reach out to me at:</p>
+    <p><a href="mailto:kevinngo2002@gmail.com">kevinngo2002@gmail.com</a></p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-section">
+    <h3 id="contact">CONTACT ME</h3>
+    <div class="contact-buttons">
+      <button onclick="window.location.href='mailto:kevinngo2002@gmail.com'"><i class="fas fa-envelope"></i></button>
+      <button onclick="window.location.href='https://www.linkedin.com/in/kevin-ngo-51598526b/'"><i class="fab fa-linkedin"></i></button>
+      <button onclick="window.location.href='https://github.com/kevinnngoo'"><i class="fab fa-github"></i></button>
+    </div>
+  </div>
+
+</body>
+
+</html>
